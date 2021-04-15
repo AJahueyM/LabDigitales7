@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Practica7.srcs/sources_1/new/74LS194.vhd" \
+"../../../../Practica7.srcs/sources_1/new/ShiftRegister_8bit.vhd" \
+
+# Do not sort compile order
+nosort
