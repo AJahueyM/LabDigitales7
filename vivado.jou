@@ -12,3 +12,976 @@
 start_gui
 open_project C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.xpr
 update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ShiftRegister_8bit [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close [ open C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.srcs/sources_1/new/IC_74LS169.vhd w ]
+add_files C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.srcs/sources_1/new/IC_74LS169.vhd
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IC_74LS169 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IC_74LS169 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg
+source IC_74LS169.tcl
+save_wave_config {C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg}
+add_force {/IC_74LS169/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/IC_74LS169/u_d} -radix hex {0 0ns}
+add_force {/IC_74LS169/parallel_in} -radix hex {0 0ns}
+add_force {/IC_74LS169/load} -radix hex {0 0ns}
+add_force {/IC_74LS169/ep} -radix hex {0 0ns}
+add_force {/IC_74LS169/et} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg
+source IC_74LS169.tcl
+run 100 ns
+run 100 ns
+add_force {/IC_74LS169/ep} -radix hex {1 0ns}
+add_force {/IC_74LS169/et} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/IC_74LS169/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+save_wave_config {C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg
+source IC_74LS169.tcl
+add_force {/IC_74LS169/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/IC_74LS169/u_d} -radix hex {0 0ns}
+add_force {/IC_74LS169/parallel_in} -radix hex {0 0ns}
+add_force {/IC_74LS169/load} -radix hex {0 0ns}
+add_force {/IC_74LS169/ep} -radix hex {1 0ns}
+add_force {/IC_74LS169/et} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/IC_74LS169/u_d} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+save_wave_config {C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg}
+close_sim
+close [ open C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.srcs/sources_1/new/BCD2_Counter.vhd w ]
+add_files C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.srcs/sources_1/new/BCD2_Counter.vhd
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top BCD2_Counter [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+open_wave_config C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg
+source BCD2_Counter.tcl
+add_force {/BCD2_Counter/u_d} -radix hex {0 0ns}
+add_force {/BCD2_Counter/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+save_wave_config {C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg
+source BCD2_Counter.tcl
+run 100 ns
+run 100 ns
+add_force {/BCD2_Counter/u_d} -radix hex {0 0ns}
+add_force {/BCD2_Counter/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+save_wave_config {C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg
+source BCD2_Counter.tcl
+add_force {/BCD2_Counter/u_d} -radix hex {0 0ns}
+add_force {/BCD2_Counter/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+save_wave_config {C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg
+source BCD2_Counter.tcl
+add_force {/BCD2_Counter/u_d} -radix hex {0 0ns}
+add_force {/BCD2_Counter/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg
+source BCD2_Counter.tcl
+add_force {/BCD2_Counter/u_d} -radix hex {0 0ns}
+add_force {/BCD2_Counter/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/BCD2_Counter/u_d} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+save_wave_config {C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg}
+close_sim
+close [ open C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.srcs/sources_1/new/Ejercicio2.vhd w ]
+add_files C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.srcs/sources_1/new/Ejercicio2.vhd
+update_compile_order -fileset sources_1
+close [ open C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.srcs/sources_1/new/sSegDisplay.vhd w ]
+add_files C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.srcs/sources_1/new/sSegDisplay.vhd
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Ejercicio2 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+open_wave_config C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg
+source Ejercicio2.tcl
+add_force {/Ejercicio2/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 s
+save_wave_config {C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg
+source Ejercicio2.tcl
+add_force {/Ejercicio2/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+save_wave_config {C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg
+source Ejercicio2.tcl
+add_force {/Ejercicio2/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg
+source Ejercicio2.tcl
+add_force {/Ejercicio2/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg
+source Ejercicio2.tcl
+save_wave_config {C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg
+source Ejercicio2.tcl
+add_force {/Ejercicio2/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+close_project
+open_project C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Ejercicio2 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+place_ports {an[7]} U13
+place_ports {an[6]} K2
+place_ports {an[5]} T14
+place_ports {an[4]} P14
+place_ports {an[3]} J14
+place_ports {an[2]} T9
+place_ports {an[1]} J18
+place_ports {an[0]} J17
+set_property IOSTANDARD LVCMOS33 [get_ports [list {an[7]} {an[6]} {an[5]} {an[4]} {an[3]} {an[2]} {an[1]} {an[0]}]]
+place_ports {seg[7]} T10
+place_ports {seg[6]} R10
+place_ports {seg[5]} K16
+place_ports {seg[4]} K13
+place_ports {seg[3]} P15
+place_ports {seg[2]} T11
+place_ports {seg[1]} L18
+place_ports {seg[0]} H15
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg[5]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg[7]} {seg[6]} {seg[5]} {seg[4]} {seg[3]} {seg[2]} {seg[1]} {seg[0]}]]
+file mkdir C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.srcs/constrs_1/new
+close [ open C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.srcs/constrs_1/new/Ejercicio2.xdc w ]
+add_files -fileset constrs_1 C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.srcs/constrs_1/new/Ejercicio2.xdc
+set_property target_constrs_file C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.srcs/constrs_1/new/Ejercicio2.xdc [current_fileset -constrset]
+save_constraints -force
+place_ports clk E3
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.runs/impl_1/Ejercicio2.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.runs/impl_1/Ejercicio2.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.runs/impl_1/Ejercicio2.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+refresh_design
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.runs/impl_1/Ejercicio2.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.runs/impl_1/Ejercicio2.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.runs/impl_1/Ejercicio2.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.runs/impl_1/Ejercicio2.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.runs/impl_1/Ejercicio2.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.runs/impl_1/Ejercicio2.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+launch_simulation
+open_wave_config C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg
+source Ejercicio2.tcl
+add_force {/Ejercicio2/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/Ejercicio2/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 3000 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.runs/impl_1/Ejercicio2.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.runs/impl_1/Ejercicio2.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IC_74LS169 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+open_wave_config C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg
+source IC_74LS169.tcl
+add_force {/IC_74LS169/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+add_force {/IC_74LS169/u_d} -radix hex {1 0ns}
+add_force {/IC_74LS169/parallel_in} -radix hex {0 0ns}
+add_force {/IC_74LS169/load} -radix hex {0 0ns}
+add_force {/IC_74LS169/ep} -radix hex {1 0ns}
+add_force {/IC_74LS169/et} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+save_wave_config {C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg
+source IC_74LS169.tcl
+add_force {/IC_74LS169/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/IC_74LS169/u_d} -radix hex {1 0ns}
+add_force {/IC_74LS169/parallel_in} -radix hex {0 0ns}
+add_force {/IC_74LS169/load} -radix hex {0 0ns}
+add_force {/IC_74LS169/ep} -radix hex {1 0ns}
+add_force {/IC_74LS169/et} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/IC_74LS169/u_d} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+save_wave_config {C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg}
+close_sim
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top BCD2_Counter [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+open_wave_config C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg
+source BCD2_Counter.tcl
+add_force {/BCD2_Counter/u_d} -radix hex {1 0ns}
+add_force {/BCD2_Counter/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+save_wave_config {C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg}
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Ejercicio2 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.runs/impl_1/Ejercicio2.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.runs/impl_1/Ejercicio2.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.runs/impl_1/Ejercicio2.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/A01039835/Documents/GitHub/LabDigitales7/Practica7.runs/impl_1/Ejercicio2.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+launch_simulation
+open_wave_config C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg
+source Ejercicio2.tcl
+add_force {/Ejercicio2/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 300 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 6000 ns
+run 6000 ns
+run 6000 ns
+run 6000 ns
+run 6000 ns
+run 6000 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+run 600 ns
+save_wave_config {C:/Users/A01039835/Documents/GitHub/LabDigitales7/IC_74LS194_behav.wcfg}

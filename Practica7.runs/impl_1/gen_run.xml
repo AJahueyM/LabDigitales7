@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1618512378">
+  <File Type="BITSTR-BMM" Name="Ejercicio2_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Ejercicio2_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Ejercicio2_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="Ejercicio2_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Ejercicio2.tcl"/>
+  <File Type="OPT-TIMING" Name="Ejercicio2_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Ejercicio2_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="Ejercicio2_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Ejercicio2_reports.tcl"/>
+  <File Type="OPT-DRC" Name="Ejercicio2_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Ejercicio2.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Ejercicio2_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Ejercicio2_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Ejercicio2_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Ejercicio2_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Ejercicio2_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Ejercicio2_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Ejercicio2_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Ejercicio2_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Ejercicio2_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Ejercicio2_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Ejercicio2_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="Ejercicio2.bgn"/>
+  <File Type="PLACE-TIMING" Name="Ejercicio2_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Ejercicio2_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="Ejercicio2.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Ejercicio2_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Ejercicio2_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Ejercicio2_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="Ejercicio2.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="Ejercicio2_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Ejercicio2_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Ejercicio2_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Ejercicio2_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Ejercicio2_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Ejercicio2_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Ejercicio2.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="Ejercicio2_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="Ejercicio2.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Ejercicio2_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Ejercicio2_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="Ejercicio2.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Ejercicio2_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Ejercicio2_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Ejercicio2_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Ejercicio2_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Ejercicio2_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Ejercicio2_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Ejercicio2_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Ejercicio2_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Ejercicio2_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Ejercicio2_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Ejercicio2_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Ejercicio2_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Ejercicio2_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Ejercicio2_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Ejercicio2_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Ejercicio2_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Ejercicio2_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Ejercicio2_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Ejercicio2_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="Ejercicio2.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Ejercicio2_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="Ejercicio2.rbt"/>
+  <File Type="BITSTR-NKY" Name="Ejercicio2.nky"/>
+  <File Type="BG-DRC" Name="Ejercicio2.drc"/>
+  <File Type="RDI-RDI" Name="Ejercicio2.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/BCD2_Counter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/IC_74LS169.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sSegDisplay.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Ejercicio2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/74LS194.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ShiftRegister_8bit.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Ejercicio2"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Ejercicio2.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/Ejercicio2.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
